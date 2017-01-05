@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lenovo.cnews.MainActivity">
+    <android.support.design.widget.TabLayout
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/sliding_tabs"
+        app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+        app:tabBackground="@drawable/selector_tab_background"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabPadding="15dp"
+        app:tabGravity="center"
+        android:background="@color/colorPrimary"
+        app:tabTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/sliding_tabs"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_below="@+id/sliding_tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/white">-->
+
+
+    <!--</android.support.v4.view.ViewPager>-->
+</RelativeLayout>
